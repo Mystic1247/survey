@@ -343,7 +343,7 @@ def show_login_screen():
         with st.form("login_form"):
             phone_input = st.text_input(
                 "Phone Number",
-                placeholder="e.g. 03463259079",
+                placeholder="e.g. 03001234567",
                 help="Enter your registered phone number"
             )
             pass_input = st.text_input("Password", type="password")
@@ -1055,4 +1055,5 @@ elif st.session_state.get('logged_in'):
     show_user_interface()
 
 else:
+
     show_login_screen()
